@@ -24,7 +24,7 @@ export default function Navbar() {
     window.addEventListener("scroll", handleShadow);
   }, []);
   return (
-      <div className="w-full">
+      <div className="w-full text-black">
         <div
           className={
             shadow

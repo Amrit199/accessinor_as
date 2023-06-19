@@ -11,7 +11,7 @@ import logo from "../../public/assets/checked.png";
 
 const Footer = () => {
   return (
-    <div className="w-full py-6 bg-[#ecf0f3] px-4">
+    <div className="w-full py-6 bg-[#ecf0f3] px-4 text-black">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 justify-center items-center md:justify-between">
         <div className="flex items-center gap-3">
         <Image src={logo} alt="logo" className="w-8 h-8 rounded-full" />
