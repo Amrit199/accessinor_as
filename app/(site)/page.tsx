@@ -2,7 +2,7 @@ import { getPages, getProjets } from "@/sanity/sanity-utils";
 import responsive from "../../public/assets/responsive-website.png";
 import Service from "../components/Service";
 import Image from "next/image";
-import Demo from "../components/Demo";
+
 
 export default async function Home() {
   const projects = await getProjets();
