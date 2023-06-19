@@ -1,13 +1,15 @@
 import { getPages, getProjets } from "@/sanity/sanity-utils";
-import homebg from "../../public/assets/homebg.jpg";
+import responsive from "../../public/assets/responsive-website.png";
 import Service from "../components/Service";
+import Image from "next/image";
 import Demo from "../components/Demo";
 
 export default async function Home() {
   const projects = await getProjets();
   const pages = await getPages();
   return (
-    <div className="bg-white">
+    <div className="bg-white text-black pt-20">
+      {/* hero section */}
       <Demo />
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div

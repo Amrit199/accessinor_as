@@ -50,7 +50,7 @@ export default function Service() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Features
+                What <span className='text-indigo-600'>AccessiNor</span> provides
               </h2>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
