@@ -29,7 +29,7 @@ export default function Navbar() {
           className={
             shadow
               ? "w-full shadow-lg shadow-gray-600 h-20 bg-[#ecf0f3] fixed z-[40] px-7 py-6 flex items-center justify-between"
-              : "w-full h-20 bg-white border-b-2 border-stone-500 fixed z-[40] px-7 py-6 flex items-center justify-between"
+              : "w-full h-20 bg-white fixed z-[40] px-7 py-6 flex items-center justify-between"
           }
         >
           <div className="w-full">
@@ -90,8 +90,8 @@ export default function Navbar() {
               : " fixed z-30 top-0 right-0 w-full md:hidden bg-white transition-all ease-in duration-500"
           }
         >
-          <div className="flex flex-col justify-center gap-6">
-            <div className="flex flex-col items-center pt-20 justify-center gap-3 text-xl">
+          <div className="flex flex-col justify-center pt-24 pb-4 gap-6">
+            <div className="flex flex-col items-center justify-center gap-3 text-xl">
               <Link
                 href="#"
                 className="hover:text-[#206e61] cursor-pointer"
