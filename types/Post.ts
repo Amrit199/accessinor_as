@@ -8,5 +8,6 @@ export type Post = {
     title: string;
     tags: string[];
     image: string;
+    alt: string;
     content: PortableTextBlock[];
 }

@@ -33,23 +33,23 @@ export default function Navbar() {
           }
         >
           <div className="w-full">
-            <Link className="flex items-center gap-1 cursor-pointer" href="#">
+            <Link className="flex items-center gap-1 cursor-pointer" href="/">
               <Image src={logo} alt="logo" className="w-8 h-8 rounded-full" />
               <h1 className="font-bold text-3xl">AccessiNor</h1>
             </Link>
           </div>
           {/* Nav link for < 800px screen */}
           <div className="w-full hidden md:flex items-center justify-between gap-3 text-xl">
-            <Link href="#" className="hover:text-[#206e61] cursor-pointer">
+            <Link href="/product" className="hover:text-[#206e61] cursor-pointer">
               Product
             </Link>
-            <Link href="#" className="hover:text-[#206e61] cursor-pointer">
+            <Link href="/services" className="hover:text-[#206e61] cursor-pointer">
               Services
             </Link>
-            <Link href="#" className="hover:text-[#206e61] cursor-pointer">
+            <Link href="/pricing" className="hover:text-[#206e61] cursor-pointer">
               Pricing
             </Link>
-            <Link href="#" className="hover:text-[#206e61] cursor-pointer">
+            <Link href="/blogs" className="hover:text-[#206e61] cursor-pointer">
               Blogs
             </Link>
           </div>
@@ -93,28 +93,28 @@ export default function Navbar() {
           <div className="flex flex-col justify-center pt-24 pb-4 gap-6">
             <div className="flex flex-col items-center justify-center gap-3 text-xl">
               <Link
-                href="#"
+                href="/product"
                 className="hover:text-[#206e61] cursor-pointer"
                 onClick={handleMenu}
               >
                 Product
               </Link>
               <Link
-                href="#"
+                href="/services"
                 className="hover:text-[#206e61] cursor-pointer"
                 onClick={handleMenu}
               >
                 Services
               </Link>
               <Link
-                href="#"
+                href="/pricing"
                 className="hover:text-[#206e61] cursor-pointer"
                 onClick={handleMenu}
               >
                 Pricing
               </Link>
               <Link
-                href="#"
+                href="/blogs"
                 className="hover:text-[#206e61] cursor-pointer"
                 onClick={handleMenu}
               >

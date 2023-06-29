@@ -5,12 +5,7 @@ import config from "./config/client-config";
 import { Post } from "@/types/Post";
 
 export async function getProjets(): Promise<Project[]> {
-    const client = createClient({
-        projectId: '32o790cj',
-        dataset: 'production',
-    })
-
-    return client.fetch(
+    return createClient(config).fetch(
       groq`*[_type == "project"]{
         _id,
         _createdAt,
@@ -38,7 +33,11 @@ export async function getPages(): Promise<Page[]> {
 }
 
 export async function getPosts(): Promise<Post[]> {
-    return createClient(config).fetch(
+    const conugi = {
+        projectId: "32o790cj",
+        dataset: "production",
+    }
+    return createClient(conugi).fetch(
         groq`*[_type == "post"]{
             _id,
             _createdAt,
@@ -47,7 +46,25 @@ export async function getPosts(): Promise<Post[]> {
             title,
             tags,
             "image": image.asset->url,
+            alt,
             content
         }`
+    )
+}
+
+export async function getPost(slug: string): Promise<Post> {
+    return createClient(config).fetch(
+        groq`*[_type == "post" && slug.current == $slug][0]{
+            _id,
+            _createdAt,
+            name,
+            "slug": slug.current,
+            title,
+            tags,
+            "image": image.asset->url,
+            alt,
+            content
+        }`,
+        {slug}
     )
 }
