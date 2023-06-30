@@ -21,7 +21,7 @@ const Signup: React.FC = () => {
     setSignupState({ ...signupState, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log(signupState);
     createAccount();
@@ -33,7 +33,7 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+    <form className="mt-8 space-y-6">
       <div className="">
         {fields.map(field => (
           <Input
