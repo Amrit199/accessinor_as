@@ -21,7 +21,7 @@ export default function Login(){
         setLoginState({...loginState,[e.target.id]:e.target.value})
     }
 
-    const handleSubmit=(e: React.FormEvent<HTMLFormElement>)=>{
+    const handleSubmit=(e: React.FormEvent<HTMLButtonElement>)=>{
         e.preventDefault()
     }
 
