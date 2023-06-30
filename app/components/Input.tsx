@@ -1,3 +1,4 @@
+import React from "react";
 const fixedInputClass="rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm"
 
 interface InputProps {
@@ -8,12 +9,12 @@ interface InputProps {
     id: string;
     name: string;
     type: string;
-    isRequired: boolean;
-    placeholder: string;
-    customClass: string;
+    isRequired?: boolean;
+    placeholder?: string;
+    customClass?: string;
 }
 
-export default function Input({
+const Input: React.FC<InputProps> = ({
     handleChange,
     value,
     labelText,
@@ -23,8 +24,9 @@ export default function Input({
     type,
     isRequired=false,
     placeholder,
-    customClass
-}: InputProps){
+    customClass = ''
+}) => {
+  const inputClass = `${fixedInputClass} ${customClass}`
     return(
         <div className="my-5">
             <label htmlFor={labelFor} className="sr-only">
@@ -37,9 +39,11 @@ export default function Input({
               name={name}
               type={type}
               required={isRequired}
-              className={fixedInputClass+customClass}
+              className={inputClass}
               placeholder={placeholder}
             />
           </div>
     )
 }
+
+export default Input
