@@ -77,9 +77,11 @@ export default function Navbar() {
               <p className="text-md font-normal">Get Demo</p>
             </div>
 
+            <Link href="/login">
             <button className="uppercase bg-[#389f8e] text-white hover:bg-[#206e61] text-sm px-4 py-2 font-semibold rounded-md transition-all duration-300 active:bg-yellow-600">
               LOGIN
             </button>
+            </Link>
           </div>
         </div>
         {/* mobile menu list */}

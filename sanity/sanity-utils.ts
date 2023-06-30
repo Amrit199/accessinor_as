@@ -33,11 +33,7 @@ export async function getPages(): Promise<Page[]> {
 }
 
 export async function getPosts(): Promise<Post[]> {
-    const conugi = {
-        projectId: "32o790cj",
-        dataset: "production",
-    }
-    return createClient(conugi).fetch(
+    return createClient(config).fetch(
         groq`*[_type == "post"]{
             _id,
             _createdAt,
