@@ -1,7 +1,7 @@
 // import Image from "next/image";
 "use client";
 import Link from "next/link";
-import logo from "../../public/assets/checked.png";
+import logo from "/public/assets/checked.png";
 import Image from "next/image";
 import { BiPlayCircle } from "react-icons/bi";
 import { useEffect, useState } from "react";

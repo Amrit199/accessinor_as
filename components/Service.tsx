@@ -1,7 +1,7 @@
 import { BiCheckSquare } from 'react-icons/bi'
 import { TbTargetArrow, TbScanEye } from 'react-icons/tb'
 import { MdOutlineRecommend, MdOutlineMonitorHeart, MdOutlineIntegrationInstructions } from 'react-icons/md'
-import featureimg from '../../public/assets/featureimg.jpg'
+import featureimg from '/public/assets/featureimg.jpg'
 import Image from 'next/image';
 const features = [
   {

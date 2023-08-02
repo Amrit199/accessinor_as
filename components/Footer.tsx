@@ -7,7 +7,7 @@ import {
   BsGithub,
 } from "react-icons/bs";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
-import logo from "../../public/assets/checked.png";
+import logo from "/public/assets/checked.png";
 
 const Footer = () => {
   return (

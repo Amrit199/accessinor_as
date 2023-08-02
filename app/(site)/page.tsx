@@ -1,19 +1,19 @@
 import { getPages, getProjets } from "@/sanity/sanity-utils";
 import responsive from "../../public/assets/responsive-website.png";
-import Service from "../components/Service";
+import Service from "../../components/Service";
 import Image from "next/image";
 
 export default async function Home() {
   const projects = await getProjets();
   const pages = await getPages();
   return (
-    <div className="bg-white text-black pt-12">
+    <div className="max-width bg-white text-black pt-12">
       {/* hero section */}
       <div className="w-full h-full flex flex-col md:flex-row items-center text-black py-16 px-5 gap-4">
         <div className="w-full px-8 flex flex-col items-center justify-center gap-4 text-center">
           <h1 className=" text-5xl font-bold">
             Find out your{" "}
-            <span className=" font-normal text-indigo-600">
+            <span className=" font-normal secondary">
               Website Accessibility
             </span>
           </h1>
