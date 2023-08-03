@@ -1,15 +1,13 @@
-import { getPages, getProjets } from "@/sanity/sanity-utils";
 import responsive from "../../public/assets/responsive-website.png";
 import Service from "../../components/Service";
 import Image from "next/image";
+import Intro from "@/components/Intro";
 
 export default async function Home() {
-  const projects = await getProjets();
-  const pages = await getPages();
   return (
     <div className="max-width bg-white text-black pt-12">
       {/* hero section */}
-      <div className="w-full h-full flex flex-col md:flex-row items-center text-black py-16 px-5 gap-4">
+      {/* <div className="w-full h-full flex flex-col md:flex-row items-center text-black py-16 px-5 gap-4">
         <div className="w-full px-8 flex flex-col items-center justify-center gap-4 text-center">
           <h1 className=" text-5xl font-bold">
             Find out your{" "}
@@ -40,7 +38,8 @@ export default async function Home() {
 
           />
         </div>
-      </div>
+      </div> */}
+      <Intro />
       {/* accessinor intro */}
       <div className="px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-12 sm:py-16 lg:py-12">

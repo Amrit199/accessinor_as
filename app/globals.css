@@ -16,30 +16,30 @@
   @apply max-w-[1440px] mx-auto
 }
 
+.hero-component {
+  @apply flex flex-col md:flex-row items-center py-16 px-5 gap-4
+}
+
+.padding-x {
+  @apply px-8 sm:px-3
+}
+
 .padding-y {
   @apply py-16 sm:py-32
 }
 
 /* text colors */
-.primary {
-  @apply text-green-600
+.heading1 {
+  @apply text-5xl
 }
 
-.primary-hover {
-  @apply text-green-800
-}
-
-.secondary {
-  @apply text-indigo-600
-}
-
-.secondary-hover{
-  @apply text-indigo-800
+.description1 {
+  @apply text-lg
 }
 
 /* flex */
 .flex-center {
-  @apply flex items-center justify-center
+  @apply w-full flex items-center justify-center
 }
 
 
