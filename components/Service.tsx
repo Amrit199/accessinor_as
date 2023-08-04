@@ -1,8 +1,12 @@
-import { BiCheckSquare } from 'react-icons/bi'
-import { TbTargetArrow, TbScanEye } from 'react-icons/tb'
-import { MdOutlineRecommend, MdOutlineMonitorHeart, MdOutlineIntegrationInstructions } from 'react-icons/md'
-import featureimg from '/public/assets/featureimg.jpg'
-import Image from 'next/image';
+import { BiCheckSquare } from "react-icons/bi";
+import { TbTargetArrow, TbScanEye } from "react-icons/tb";
+import {
+  MdOutlineRecommend,
+  MdOutlineMonitorHeart,
+  MdOutlineIntegrationInstructions,
+} from "react-icons/md";
+import featureimg from "/public/assets/featureimg.jpg";
+import Image from "next/image";
 const features = [
   {
     name: "Comprehensive Accessibility Checks",
@@ -44,13 +48,13 @@ const features = [
 
 export default function Service() {
   return (
-    <div className="bg-white py-16 sm:py-32">
+    <div className="hero-component">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                What <span className='text-indigo-600'>AccessiNor</span> provides
+                What <span className="text-primary">AccessiNor</span> Offers
               </h2>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
@@ -62,7 +66,10 @@ export default function Service() {
                       >
                         {feature.icon}
                       </div> */}
-                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                      <feature.icon
+                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                        aria-hidden="true"
+                      />
                       {feature.name}
                     </dt>{" "}
                     <dd className="inline">{feature.description}</dd>
@@ -71,15 +78,11 @@ export default function Service() {
               </dl>
             </div>
           </div>
-          <Image src={featureimg} alt="Product screenshot"
-            className="w-full self-center rounded-xl shadow-xl ring-1 ring-gray-400/10"/>
-          {/* <img
+          <Image
             src={featureimg}
             alt="Product screenshot"
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            width={2432}
-            height={1442}
-          /> */}
+            className="w-full self-center rounded-xl shadow-xl ring-1 ring-gray-400/10"
+          />
         </div>
       </div>
     </div>

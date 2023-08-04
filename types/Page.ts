@@ -9,3 +9,8 @@ export type Page = {
     title: string;
     content: PortableTextBlock[];
 }
+
+export interface ButtonProps {
+    title: string;
+    styles?: string;
+}

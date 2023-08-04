@@ -28,6 +28,7 @@
   @apply py-16 sm:py-32
 }
 
+
 /* text colors */
 .heading1 {
   @apply text-5xl
@@ -40,6 +41,12 @@
 /* flex */
 .flex-center {
   @apply w-full flex items-center justify-center
+}
+
+/* button */
+
+.btn {
+  @apply rounded-lg shadow-sm px-4 py-[0.5rem] font-medium uppercase
 }
 
 

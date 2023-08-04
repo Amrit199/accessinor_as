@@ -6,6 +6,7 @@ import Image from "next/image";
 import { BiPlayCircle } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Button from "./Button";
 
 export default function Navbar() {
   const [mobile, setMobile] = useState(false);
@@ -78,9 +79,7 @@ export default function Navbar() {
             </div>
 
             <Link href="/login">
-            <button className="uppercase bg-[#389f8e] text-white hover:bg-[#206e61] text-sm px-4 py-2 font-semibold rounded-md transition-all duration-300 active:bg-yellow-600">
-              LOGIN
-            </button>
+            <Button title="LOGIN" styles="bg-primary hover:bg-p-hover text-white" />
             </Link>
           </div>
         </div>
