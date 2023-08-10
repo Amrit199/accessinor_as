@@ -2,6 +2,7 @@ import Image from "next/image";
 import responsive from "../../../public/assets/webchecker.png";
 import codel from "../../../public/assets/pexels-markus-spiske-4439901.jpg";
 import coder from "../../../public/assets/pexels-thisisengineering-3861976.jpg";
+import Button from "@/components/Button";
 
 export default function Product() {
   return (
@@ -10,7 +11,7 @@ export default function Product() {
         <div className="w-full px-8 flex flex-col items-start justify-center gap-4">
           <h1 className=" text-4xl font-bold">
             AssessiNor: Automated
-            <span className=" font-normal text-indigo-600 px-2">
+            <span className=" font-normal text-primary px-2">
               Website Accessibility
             </span>
             Checker Powered by AI
@@ -20,12 +21,7 @@ export default function Product() {
             streamlining the process of becoming accessible and compliant using
             AI, machine learning, and computer vision.
           </p>
-          <a
-            href="#"
-            className="rounded-md bg-indigo-600 shadow-sm px-6 py-2 text-lg font-semibold text-white hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Quick Demo
-          </a>
+          <Button title="qucik demo" styles="bg-primary hover:bg-p-hover text-white"/>
         </div>
         <div className="w-full flex items-center justify-center relative py-6">
           <Image
@@ -51,8 +47,6 @@ export default function Product() {
           />
         </div>
       </div>
-      {/* how it works */}
-      <div className="w-full h-full "></div>
     </div>
   );
 }
