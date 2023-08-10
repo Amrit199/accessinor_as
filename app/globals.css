@@ -21,7 +21,7 @@
 }
 
 .padding-x {
-  @apply px-8 sm:px-3
+  @apply px-2 lg:px-14
 }
 
 .padding-y {
@@ -31,7 +31,11 @@
 
 /* text colors */
 .heading1 {
-  @apply text-5xl
+  @apply text-4xl
+}
+
+.heading2 {
+  @apply text-xl
 }
 
 .description1 {

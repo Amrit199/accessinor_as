@@ -10,7 +10,7 @@ export default function About() {
         <p className="description1 w-full md:max-w-2xl text-center">
           {data.about_desc}
         </p>
-        <div className="flex-center gap-4">
+        <div className="flex-center flex-wrap gap-4">
           <Button
             title="Get Started"
             styles="bg-primary hover:bg-p-hover text-white"

@@ -7,7 +7,7 @@ export default async function Intro() {
   return (
     <div className="hero-component">
       <div className="flex-center flex-col gap-4 text-center padding-x">
-        <h1 className="heading1">
+        <h1 className="heading1 flex items-center justify-center flex-wrap">
           {data.home_intor}
           <span className="text-6xl text-primary mx-2 animate-pulse">
             &#8594;
@@ -16,7 +16,7 @@ export default async function Intro() {
         </h1>
         <p className="description1">{data.home_desc}</p>
         <Button
-          title="Scan Now"
+          title="start now"
           styles="bg-primary hover:bg-p-hover text-white"
         />
       </div>
