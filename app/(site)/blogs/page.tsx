@@ -22,8 +22,8 @@ export default async function Blogs() {
                 />
               </div>
               <div className="flex items-center gap-2 flex-wrap">
-              {post.tags.map((tag) => (
-              <p className="w-fit rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+              {post.tags.map((tag, index) => (
+              <p key={index} className="w-fit rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
                 {tag}
               </p>
 
