@@ -1,4 +1,4 @@
-import Service from "../../components/Service";
+import Service from "../../components/ServiceCard";
 import Intro from "@/components/Intro";
 import About from "@/components/About";
 import AIDemo from "@/components/AIDemo";

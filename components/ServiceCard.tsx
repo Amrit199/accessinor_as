@@ -46,7 +46,7 @@ const features = [
   },
 ];
 
-export default function Service() {
+export default function ServiceCard() {
   return (
     <div className="hero-component">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

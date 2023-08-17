@@ -7,10 +7,13 @@ export default async function Intro() {
   return (
     <div className="hero-component padding-y">
       <div className="flex-center flex-col gap-4 px-2 lg:px-14">
-        <h1 className="heading1 flex items-center justify-center flex-wrap">
+        <div className="flex items-center flex-wrap">
+        <h1 className="heading1">
           {data.title}
-          <span className="text-primary">{data.name}</span>
         </h1>
+        <span className="text-primary heading1">{data.name}</span>
+
+        </div>
         <p className="description1">{data.desc1}</p>
         <p className="description1">{data.desc2}</p>
         <div className="relative w-full mt-2 rounded-md shadow-sm">

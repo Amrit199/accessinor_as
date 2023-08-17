@@ -18,12 +18,17 @@ export default async function Blogs() {
                   height={350}
                   src={post.image}
                   alt={post.alt}
-                  className="w-full h-full object-cover brightness-75 group-hover:brightness-100 duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover rounded-lg duration-300 group-hover:scale-110"
                 />
               </div>
+              <div className="flex items-center gap-2 flex-wrap">
+              {post.tags.map((tag) => (
               <p className="w-fit rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                {post.tags}
+                {tag}
               </p>
+
+              ))}
+              </div>
               <h1 className="text-lg font-semibold leading-6 text-gray-900 px-2">
                 {post.title}
               </h1>
