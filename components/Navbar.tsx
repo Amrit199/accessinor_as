@@ -79,7 +79,7 @@ export default function Navbar() {
             </div>
 
             <Link href="/login">
-            <Button title="LOGIN" styles="bg-primary hover:bg-p-hover text-white" />
+            <Button link="/" title="LOGIN" styles="bg-primary hover:bg-p-hover text-white" ariaLabel="Navigate to login" />
             </Link>
           </div>
         </div>

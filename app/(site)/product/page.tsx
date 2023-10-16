@@ -21,7 +21,7 @@ export default function Product() {
             streamlining the process of becoming accessible and compliant using
             AI, machine learning, and computer vision.
           </p>
-          <Button title="qucik demo" styles="bg-primary hover:bg-p-hover text-white"/>
+          <Button link="/" title="qucik demo" styles="bg-primary hover:bg-p-hover text-white" ariaLabel="Navigate to quick demo" />
         </div>
         <div className="w-full flex items-center justify-center relative py-6">
           <Image

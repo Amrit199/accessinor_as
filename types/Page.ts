@@ -11,6 +11,12 @@ export type Page = {
 }
 
 export interface ButtonProps {
+    link: string;
     title: string;
     styles?: string;
+    ariaLabel: string;
+}
+
+export interface ReadmoreProps {
+    item: string;
 }

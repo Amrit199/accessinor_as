@@ -1,6 +1,7 @@
 import { pages } from "@/constants";
 import Image from "next/image";
 import Button from "./Button";
+import { FaArrowRight } from "react-icons/fa";
 
 export default async function Intro() {
   const data = pages.home;
@@ -9,15 +10,17 @@ export default async function Intro() {
       <div className="flex-center flex-col gap-4 text-center padding-x">
         <h1 className="heading1 flex items-center justify-center flex-wrap">
           {data.home_intor}
-          <span className="text-6xl text-primary mx-2 animate-pulse">
-            &#8594;
+          <span className="text-4xl text-primary mx-2 animate-pulse">
+            <FaArrowRight />
           </span>
-          <span className="text-primary">{data.title}</span>
+          <span className="text-primary font-bold">{data.title}</span>
         </h1>
         <p className="description1">{data.home_desc}</p>
         <Button
+        link="/"
           title="start now"
           styles="bg-primary hover:bg-p-hover text-white"
+          ariaLabel="Navigate to demo product"
         />
       </div>
       <div className="flex-center">
